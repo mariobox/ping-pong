@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/skeleton.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- 
+    <script type="text/javascript" src="js/pingpong.js"></script>
+    <script type="text/javascript" src="js/pingpong-interface.js"></script>
+    We don't need links to those two files any more, since we run bowserify and consolidated everything into an app.js file: -->
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <title>Ping Pong</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="twelve columns">
+                <h1>Ping-Pong</h1>
+                <p>Enter a number and the app will print all numbers from one to the number you choose, replacing those divisible by 3 with the word "ping" , those divisible by 5 with the word "pong", and those divisible by 15 with "ping-pong".</p>
+                <p>The objective of this exercise is to show how we can use <a href="https://gulpjs.com">Gulp</a> to simplify our development and deployment process, optimize our code, and package it up in a format that the browser can understand.</p>
+                <p>You can find a full explanation on how to do this project in the <a href="https://www.learnhowtoprogram.com/javascript/introduction-to-javascript">Epicodus: Introduction to JavaScript</a> course material. My implementation is slightly different, since I am using ES6 classes instead of functions and prototypes.</p>
+                <form id="ping-pong-form">
+                    <label for="goal">Enter a number:</label>
+                    <input id="goal" type="number">
+                    <button type="submit">Submit</button>
+                </form>
+                <!-- We will add this signup form to demonstrate gulp concatenation -->
+                <form id="signup">
+                    <label for="email">Enter your email:</label>
+                    <input id="email" type="text">
+                    <button type="submit">Submit</button>
+                </form>
+                <ul id="solution"></ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
